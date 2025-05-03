@@ -21,7 +21,6 @@ class Task2 implements Runnable {
 		}
 		System.out.println("Task2 terminated");
 	}
-
 }
 public class ThreadCreation {
 	public static void main(String[] args) {
