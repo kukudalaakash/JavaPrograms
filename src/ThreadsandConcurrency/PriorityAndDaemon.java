@@ -1,5 +1,6 @@
 package ThreadsandConcurrency;
 
+
 public class PriorityAndDaemon {
 	public static void main(String[] args) {
 		Task1 t1 = new Task1();

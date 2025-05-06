@@ -1,5 +1,22 @@
 package ThreadsandConcurrency;
 
+class Task extends Thread {
+	private int n;
+
+	public Task(String name, int n) {
+		this.setName(name);
+		this.n = n;
+	}
+
+	@Override
+	public void run() {
+		System.out.println(this.getName() + " is Running ");
+		for (int i = n * 100; i <= n * 100 + 20; i++) {
+			System.out.print(i + " ");
+		}
+		System.out.println(this.getName() + "terminated");
+	}
+}
 class Task1 extends Thread {
 	@Override
 	public void run() {
