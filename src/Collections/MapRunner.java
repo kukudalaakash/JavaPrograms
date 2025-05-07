@@ -34,5 +34,6 @@ public class MapRunner {
 		}
 		System.out.println(tm.subMap('c', true, 'i', false));
 		map.entrySet().stream().sorted(Map.Entry.comparingByValue()).forEach(System.out::println);
+
 	}
 }
